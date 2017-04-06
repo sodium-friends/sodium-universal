@@ -1,0 +1,31 @@
+{
+  "name": "sodium-universal",
+  "version": "0.0.0",
+  "description": "Universal wrapper for sodium-javascript and sodium-native working in Node.js and the Browser",
+  "main": "index.js",
+  "browser": {
+    "sodium-native": "sodium-javascript"
+  },
+  "dependencies": {
+    "sodium-javascript": "0.0.1",
+    "sodium-native": "^1.8.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sodium-friends/sodium-universal.git"
+  },
+  "keywords": [
+    "libsodium",
+    "sodium",
+    "sodium-native",
+    "sodium-javascript",
+    "browserify"
+  ],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sodium-friends/sodium-universal/issues"
+  },
+  "homepage": "https://github.com/sodium-friends/sodium-universal#readme"
+}
