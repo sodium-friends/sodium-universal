@@ -3,9 +3,7 @@
   "version": "1.3.0",
   "description": "Universal wrapper for sodium-javascript and sodium-native working in Node.js and the Browser",
   "main": "index.js",
-  "browser": {
-    "./index.js": "./browser.js"
-  },
+  "browser": "browser.js",
   "dependencies": {
     "sodium-javascript": "~0.3.0"
   },
