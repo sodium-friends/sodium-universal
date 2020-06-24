@@ -4,8 +4,8 @@ const { Transform, PassThrough } = require('stream')
 const resolve = require('resolve')
 
 module.exports = function (file, opts) {
-  const basedir = path.dirname(file)
-  const name = path.basename(file)
+  const basedir = path.resolve(__dirname, '..')
+  const relname = path.relative(basedir, file)
 
   if (opts._flags.browserField === false) {
     return new PassThrough()
@@ -16,7 +16,7 @@ module.exports = function (file, opts) {
       cb()
     },
     flush (cb) {
-      const m = 'sodium-javascript/' + name
+      const m = 'sodium-javascript/' + relname
       resolve(m, { basedir }, (err, file) => {
         if (err) return cb(err)
         fs.readFile(file, (err, buf) => {
