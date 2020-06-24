@@ -9,7 +9,7 @@ const tmp = "module.exports = require('sodium-native')\n"
 function recurse (dir) {
   const ls = fs.readdirSync(dir)
   const subdir = path.relative(root, dir)
-  if (subdir) fs.mkdirSync(subdir)
+  if (subdir) fs.mkdirSync(subdir, { recursive: true })
 
   for (const file of ls) {
     if (file === 'internal') recurse(path.join(dir, file))
