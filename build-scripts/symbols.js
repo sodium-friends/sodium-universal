@@ -5,7 +5,7 @@ var symbols = exec(`nm -gU "${path.join(require.resolve('sodium-native'), '../pr
 var native = new Set(Object.keys(require('sodium-native')).sort())
 var js = new Set(Object.keys(require('sodium-javascript')).sort())
 
-symbols = symbols.map(l => l.split(' ').pop().replace(/^\_/, '').replace(/(\_[^_]*bytes.*)/, (s) => s.toUpperCase()))
+symbols = symbols.map(l => l.split(' ').pop().replace(/^_/, '').replace(/_[^_]*bytes.*/, (s) => s.toUpperCase()))
 
 var missing = []
 
