@@ -6,7 +6,7 @@
   "dependencies": {
     "resolve": "^1.17.0",
     "sodium-native": "^3.2.0",
-    "sodium-javascript": "~0.6.2",
+    "sodium-javascript": "~0.7.2",
     "blake2b": "^2.1.1",
     "chacha20-universal": "^1.0.4",
     "nanoassert": "^2.0.0",
