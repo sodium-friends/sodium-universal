@@ -31,6 +31,14 @@ c7dbd46a6cc84ff2e0d1285c
 
 And the browser:
 
+First install the peer dep, `sodium-javascript`.
+
+```sh
+npm install --save sodium-javascript
+```
+
+And then browserify
+
 ```sh
 browserify example.js > bundle.js
 ```
