@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sodium-friends/sodium-universal.git"
+    "url": "git+https://github.com/holepunchto/sodium-universal.git"
   },
   "keywords": [
     "libsodium",
@@ -36,10 +36,14 @@
     "sodium-javascript",
     "browserify"
   ],
-  "author": "Emil Bay <github@tixz.dk>",
+  "contributors": [
+    "Emil Bay <github@tixz.dk> (http://bayes.dk)",
+    "Mathias Buus <mathiasbuus@gmail.com> (https://mafinto.sh)",
+    "Christophe Diederichs <chm-diederichs@hyperdivision.dk>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sodium-friends/sodium-universal/issues"
+    "url": "https://github.com/holepunchto/sodium-universal/issues"
   },
-  "homepage": "https://github.com/sodium-friends/sodium-universal#readme"
+  "homepage": "https://github.com/holepunchto/sodium-universal#readme"
 }
